@@ -4,6 +4,7 @@
   "description": "Example of universal app",
   "main": "start.js",
   "scripts": {
+    "start": "NODE_PATH=\"./src\" node --harmony ./babel.server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,15 +28,20 @@
   "homepage": "https://github.com/PeterKow/universal-react#readme",
   "dependencies": {
     "babel": "^6.1.5",
+    "babel-polyfill": "^6.1.4",
     "express": "^4.13.3",
     "http-proxy": "^1.12.0",
+    "piping": "^0.3.0",
     "react": "^0.14.2",
+    "react-dom": "^0.14.2",
     "webpack": "^1.12.4",
     "webpack-dev-server": "^1.12.1"
   },
   "devDependencies": {
     "babel-core": "^6.1.4",
     "babel-loader": "^6.1.0",
-    "babel-preset-es2015": "^6.1.4"
+    "babel-preset-es2015": "^6.1.4",
+    "babel-preset-react": "^6.1.4",
+    "babel-preset-stage-0": "^6.1.2"
   }
 }
